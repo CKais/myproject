@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Entrer une chaîne de caractère:</p>
+
+<input type="text" id="in"><br><br>
+
+<button onclick="myFunction()">Submit</button>
+   
+<p id="test"></p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("in").value;
+  var res = str.split(" ");
+  document.getElementById("test").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
